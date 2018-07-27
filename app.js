@@ -4,7 +4,7 @@ var app = express();
 var bodi = require("body-parser");
 app.use(bodi.urlencoded({extened:true}))
 var mongoose = require('mongoose');
-
+var port = process.env.PORT|| 3000;
 mongoose.connect('mongodb://uditkhanna112:uditkhanna112@ds147391.mlab.com:47391/uditkhanna', (err,db) => {
   if(err){
     return console.log('Unable to connect');
@@ -95,4 +95,4 @@ app.use('/assets',express.static('assets'))
 
 
 
-app.listen(3000);
+app.listen(port);
