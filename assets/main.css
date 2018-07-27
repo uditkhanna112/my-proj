@@ -1,0 +1,141 @@
+``*.{
+	margin: 0px;
+padding: 0px;
+overflow-y: hidden;
+	}
+	#aa{
+		border-radius: 50px;
+	}
+	.cntainer{
+		position: relative;
+		width: 100%;
+		height: 600px;
+	}
+	#ud1{
+		width: 100%;
+		height: 600px;
+	}
+	.abc{
+		position: absolute;
+		background-color: black;
+		opacity: 0.6;
+
+		left: 0;
+		bottom: 0;
+		right: 0;
+height: 600px;
+
+	}
+	.typed{
+		display: inline;
+		font-weight: bold;
+
+	}
+	.tex1{
+		position: absolute;
+
+		color: white;
+	}
+
+@media only screen and (min-width: 801px)
+{
+	.tex1{
+		bottom: 40%;
+		left: 30%;
+	}
+	.typed{
+	font-size: 80px;
+}
+
+
+.row{
+	width: 96%;
+
+}
+}
+
+@media only screen and (max-width: 800px)   {
+.tex1{
+	bottom:30%;
+	left:27%;
+}
+
+
+.typed{
+	font-size: 50px;
+}
+
+.row{
+	width: 90%;
+
+}
+}
+
+
+@media only screen and (max-width: 768px)   {
+.tex1{
+	bottom:30%;
+	left:27%;
+}
+
+
+.typed{
+	font-size: 50px;
+}
+
+.row{
+	width: 90%;
+
+}
+}
+
+
+@media only screen and (max-width: 600px)   {
+.tex1{
+	bottom:30%;
+	left:30%;
+}
+
+.typed{
+	font-size: 50px;
+}
+
+.row{
+	width: 90%;
+
+}
+}
+@media only screen and (max-width: 400px)   {
+.tex1{
+	bottom:30%;
+	left:2%;
+}
+
+.typed{
+	font-size: 40px;
+}
+.row{
+	width: 90%;
+
+}
+
+
+}
+#aa{
+	width:400px;
+	height:300px;
+	margin:50px;
+	margin-top: 40px;
+}
+.container{
+	padding: 10px;
+	margin:auto;
+	margin-top: 50px;
+}
+#aa:hover{
+	transform: scale(1.1);
+	transition: 1s;
+}
+.btn-success{
+	margin:auto ;
+}

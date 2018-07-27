@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="/assets/main2.css">
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<div class="container">
+<div class="jumbotron">
+<h1>
+Your Wishes
+</h1>
+<a href="/gallery" ><button class="btn-success btn-lg" id="bs">View Gallery</button></a>
+<a href="/wishes2" ><button class="btn-danger btn-lg" id="as">View Wishes</button></a>
+</div>
+</div>
+
+
+<div class="row">
+
+<% arr.forEach(function(arr1){ %>
+
+<div class="col-lg-3 col-md-6 col-sm-12">
+	<div class="card">
+
+<img class="card-img-top" src="/assets/gift3.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= arr1.name %></h5>
+      <p class="card-text"><%= arr1.message %></p>
+    </div>
+
+  </div>
+</div>
+<% });%>
+</div>
+
+</body>
+</html>
