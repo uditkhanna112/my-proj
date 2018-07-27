@@ -3,9 +3,6 @@
 padding: 0px;
 overflow-y: hidden;
 	}
-	#aa{
-		border-radius: 50px;
-	}
 	.cntainer{
 		position: relative;
 		width: 100%;
@@ -121,21 +118,18 @@ height: 600px;
 
 
 }
-#aa{
-	width:400px;
-	height:300px;
-	margin:50px;
-	margin-top: 40px;
-}
 .container{
 	padding: 10px;
 	margin:auto;
 	margin-top: 50px;
 }
-#aa:hover{
-	transform: scale(1.1);
-	transition: 1s;
-}
+
 .btn-success{
 	margin:auto ;
+}
+#abcd{
+	margin-bottom:40px;
+}
+a{
+	text-decoration: none;
 }

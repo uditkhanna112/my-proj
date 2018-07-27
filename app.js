@@ -4,7 +4,7 @@ var app = express();
 var bodi = require("body-parser");
 app.use(bodi.urlencoded({extened:true}))
 var mongoose = require('mongoose');
-var port = process.env.PORT|| 3000;
+
 mongoose.connect('mongodb://uditkhanna112:uditkhanna112@ds147391.mlab.com:47391/uditkhanna', (err,db) => {
   if(err){
     return console.log('Unable to connect');
@@ -20,19 +20,6 @@ var schema = new mongoose.Schema({
 
 var mess = mongoose.model("mess",schema);
 
-// var a = new mess({
-//   name:"UDit",
-//   message:"Hello"
-// });
-// a.save(function(err,c){
-//   if(err){
-//     console.log("Error");
-//   }
-//   else{
-//     console.log(c);
-//   }
-// });
-
 mess.find({},function(err,ab){
   if(err){
     console.log(err);
@@ -47,14 +34,7 @@ app.get("/gallery",function(req,res){
   res.render("gallery.ejs");
 });
 app.get("/wishes2",function(req,res){
-  mess.find({},function(err,details){
-    if(err){
-      console.log(err)
-    }
-    else
-  res.render("wishes2.ejs",{arr:details});  
-  console.log(details);  
-  });
+  res.render("wishes2.ejs");  
   
 });
 app.get("/about",function(req,res){
@@ -94,5 +74,5 @@ mess.create(newmes,function(err,newly){
 app.use('/assets',express.static('assets'))
 
 
-
-app.listen(port);
+var Port = process.env.PORT || 3000;
+app.listen(Port);
