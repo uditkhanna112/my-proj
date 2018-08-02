@@ -30,9 +30,6 @@ mess.find({},function(err,ab){
 });
 
 
-app.get("/gallery",function(req,res){
-  res.render("gallery.ejs");
-});
 app.get("/wishes2",function(req,res){
   res.render("wishes2.ejs");  
   
@@ -74,5 +71,5 @@ mess.create(newmes,function(err,newly){
 app.use('/assets',express.static('assets'))
 
 
-var Port = process.env.PORT || 3000;
-app.listen(Port);
+var port=process.env.PORT || 3000;
+app.listen(port);
